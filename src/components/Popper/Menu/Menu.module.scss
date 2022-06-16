@@ -1,0 +1,45 @@
+.menu-list {
+    width: 224px;
+
+    .menu-item {
+        margin-left: 0;
+        padding: 11px 16px;
+        width: 100%;
+        justify-content: flex-start;
+        border-radius: 0;
+        font-weight: 600;
+
+        &:hover {
+            background-color: var(--gray-hover);
+        }
+
+        &.separate {
+            border-top: 1px solid #ccc;
+        }
+    }
+}
+
+.menu-body {
+    overflow-y: auto;
+}
+
+//Header
+.header {
+    margin-top: -8px;
+    flex-shrink: 0;
+    position: relative;
+    height: 50px;
+}
+
+.back-btn {
+    width: 50px;
+    height: 100%;
+    background-color: transparent;
+}
+
+.header-title {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}

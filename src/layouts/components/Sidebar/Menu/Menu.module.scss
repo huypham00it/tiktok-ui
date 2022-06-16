@@ -1,0 +1,35 @@
+.menu-item {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    transition: background-color 0.3s ease-in-out;
+    border-radius: 4px;
+    color: var(--text-color);
+
+    .active-icon {
+        display: none;
+    }
+
+    &:hover {
+        background-color: rgba(22, 24, 35, 0.03);
+    }
+
+    &.active {
+        color: var(--primary);
+
+        .icon {
+            display: none;
+        }
+
+        .active-icon {
+            display: inline;
+        }
+    }
+
+    .title {
+        font-size: 1.8rem;
+        margin-left: 8px;
+        font-weight: 700;
+        line-height: 25px;
+    }
+}
